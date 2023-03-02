@@ -1,0 +1,19 @@
+micronaut:
+  application:
+    name: micranautdemo
+datasources:
+  default:
+    url: jdbc:mysql://localhost:3306/db
+    username: root
+    password: ''
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    db-type: mysql
+    dialect: MYSQL
+flyway:
+  datasources:
+    default:
+      enabled: true
+netty:
+  default:
+    allocator:
+      max-order: 3
